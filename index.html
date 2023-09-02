@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ahlam</title>
+    <!-- Css File -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <header class="header container-lg">
+        <div class="containerr">
+            <a href="#"><span>A</span>hlam</a>
+            <div>
+                <label class="switch" style="visibility: hidden;">
+                    <input id="switch-btn" onclick="changeTheme()" type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a href="#services">services</a></li> -->
+                    <li><a href="#contant">Contact</a></li>
+                    <!-- <li><a href="images/ahlamMo7md.pdf" download target="_blank" class="btn"
+                            style="background-image: url(images/btn.svg);">CV</a></li> -->
+                </ul>
+            </nav>
+            <!-- Menu for Mobile -->
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <!-- <li><a href="#services">services</a></li> -->
+                        <li><a href="#contant">Contact</a></li>
+                        <!-- <li><a href="images/ahlamMo7md.pdf" download target="_blank" class="btn"
+                                style="background-image: url(images/btn.svg);">CV</a></li> -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Landing Section -->
+    <section class="home padding-top container-lg" id="home">
+        <div class="containerr">
+            <div class="intro">
+                <span>Hello &#x1F44B;,I'm</span>
+                <h1>Ahlam Mohammed</h1>
+                <h2>Front End Developer | UX / UI Designer</h2>
+                <p id="sub-intro"></p>
+                <a href="#contacts" class="btn" style="background-image: url(images/btn.svg);">Contact</a>
+            </div>
+            <figure>
+                <img id="img" src="images/landing.svg" alt="Ahlam">
+            </figure>
+        </div>
+        <div class="background">
+            <img src="images/bg.svg" alt="">
+        </div>
+    </section>
+
+    <main>
+
+        <!-- About Me Section -->
+        <section class="about padding-top container-lg" id="about">
+            <div class="containerr">
+                <!-- Intro Section -->
+                <article class="text">
+                    <header>
+                        <h2>About Me</h2>
+                    </header>
+                    <p>
+                        Hello There! I am a front-end developer & UX/UI designer who loves coding and designing.
+                    </p>
+                    <p>
+                        My Area of focus involves developing and designing responsive stunning websites that are as
+                        simple and easy to use as
+                        possible.
+
+                    </p>
+                    <p>
+                        I am passionate about delivering solutions that add to people's lives and at the same time
+                        challenge me.
+
+                    </p>
+                    <h3>Here are my main technical skills:</h3>
+                    <div class="technical-skills">
+                        <img src="images/css-icon.svg" alt="Css">
+                        <img src="images/html-icon.svg" alt="Html">
+                        <img src="images/js-icon.svg" alt="Js">
+                        <img src="images/favicon.ico" alt="VueJS">
+                        <img src="images/bootstrap.svg" alt="Bootstrap">
+                        <img src="images/tailwind.svg" alt="Tailwind">
+                        <img src="images/git.svg" alt="Git">
+                        <img src="https://static.figma.com/uploads/1a667ef53b7c4837049399d0593ffca39e0bec9e"
+                            alt="Figma">
+                    </div>
+                </article>
+                <!-- Skills Section -->
+                <article class="text">
+                    <header>
+                        <h2>Skills</h2>
+                    </header>
+                    <div class="skill">
+                        <div class="box">
+                            <img src="images/leader.svg" alt="">
+                            <div>
+                                <h4> Communication</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="images/solution-provider.svg" alt="">
+                            <div>
+                                <h4>Problem Solving</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="images/team-work.svg" alt="">
+                            <div>
+                                <h4>Teamwork Skills</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="images/content-writing.svg" alt="">
+                            <div>
+                                <h4>Writing Content</h4>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <!-- <section class="about padding-top">
+            <div class="containerr">
+                <article class="text">
+                    <img id="effict" src="images/exp.svg" alt="" style="padding-top: 50px;">
+                </article>
+                <article class="text">
+                    <header>
+                        <h2>Experience</h2>
+                    </header>
+                    <div class="experience-box">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/job.svg" alt="">
+                                </div>
+                                <span>2020</span>
+                                <h5>Medication Guide and Reports Management<span>Full stack developer</span></h5>
+                                <p>Analysis of all Website operation and Database , Website development by Laravel,
+                                    Mysql, Bootstrap </p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/job.svg" alt="">
+                                </div>
+                                <span>2019</span>
+                                <h5>Blog<span>Full stack developer</span></h5>
+                                <p>Analysis of all Website operation and Database , Website development by php, Mysql,
+                                    css </p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/job.svg" alt="">
+                                </div>
+                                <span>2015</span>
+                                <h5>ENGINEERING DEGREE<span>OXFORD UNIVERSITY</span></h5>
+                                <p> Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
+                                    adipisicing elit</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section> -->
+
+        <!-- My Portfolio Section  -->
+        <section class="portfolio padding-top container-lg" id="portfolio">
+            <header>
+                <h1>My Portfolio</h1>
+            </header>
+            <div>
+                <!-- Store Project -->
+                <div class="row mb-5">
+
+                    <!-- Fashion -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <!-- <a href="https://github.com/Ahlam-Mohammed/Login-Tailwindcss" target="_blank" rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a> -->
+                                    <a href="https://ahlam-mo7md.github.io/fashion/" target="_blank"
+                                        rel="noreferrer"><img src="images/external-link-icon.svg"
+                                            alt="Visitar site"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/fashion.jpeg" alt="">
+                            </figure>
+                            <h3>Fashion Store</h3>
+                            <footer>
+                                <ul>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
+                                    <li>Vuejs</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- PCsoft -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <!-- <a href="https://github.com/Ahlam-Mohammed/Login-Tailwindcss" target="_blank" rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a> -->
+                                    <a href="https://pcsoftgroup.com/en" target="_blank" rel="noreferrer"><img
+                                            src="images/external-link-icon.svg" alt="Visitar site"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/pc.jpeg" alt="">
+                            </figure>
+                            <h3>PC Soft Group</h3>
+                            <footer>
+                                <ul>
+                                    <li>TaliwandCss</li>
+                                    <li>Vuejs</li>
+                                    <li>UI-UX</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- masarat -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <!-- <a href="https://github.com/Ahlam-Mohammed/Login-Tailwindcss" target="_blank" rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a> -->
+                                    <a href="https://example.pcsoftgroup.com/en/" target="_blank" rel="noreferrer"><img
+                                            src="images/external-link-icon.svg" alt="Visitar site"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/masarat.jpeg" alt="">
+                            </figure>
+                            <h3>Masarat Delivery</h3>
+                            <footer>
+                                <ul>
+                                    <li>TaliwandCss</li>
+                                    <li>Vuejs</li>
+                                    <li>Astro</li>
+                                    <li>UI-UX</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- Pharmacy -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/pharmacies-group-team/pharmacy" target="_blank"
+                                        rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/pharmacy.jpg" alt="">
+                            </figure>
+                            <h3>Pharmacy Online</h3>
+                            <footer>
+                                <ul>
+                                    <li>TaliwandCss</li>
+                                    <li>Livewire</li>
+                                    <li>Laravel</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- Job -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/Ahlam-Mohammed/Job-Site-Laravel" target="_blank"
+                                        rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                                    <a href="https://ahlam-mohammed.github.io/Job-site/" target="_blank"
+                                        rel="noreferrer"><img src="images/external-link-icon.svg"
+                                            alt="Visitar site"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/job (2).jpeg" alt="">
+                            </figure>
+                            <h3>Job.com</h3>
+                            <footer>
+                                <ul>
+                                    <li>Bootstrap</li>
+                                    <li>Laravel</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- Bank -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/Ahlam-Mohammed/kuraimibank-website" target="_blank"
+                                        rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/bank.jpeg" alt="">
+                            </figure>
+                            <h3>Bank website</h3>
+                            <footer>
+                                <ul>
+                                    <li>Sass</li>
+                                    <li>Laravel</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- Landing -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/Ahlam-Mohammed/landing-page" target="_blank"
+                                        rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                                    <a href="https://ahlam-mohammed.github.io/landing-page/" target="_blank"
+                                        rel="noreferrer"><img src="images/external-link-icon.svg"
+                                            alt="Visitar site"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/landing.jpeg" alt="">
+                            </figure>
+                            <h3>Landing Page</h3>
+                            <footer>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>TaliwandCss</li>
+                                    <li>Livewire</li>
+                                    <li>Laravel</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- Sunnyside -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/Ahlam-Mohammed/Sunnyside" target="_blank"
+                                        rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                                    <a href="https://ahlam-mohammed.github.io/Sunnyside/" target="_blank"
+                                        rel="noreferrer"><img src="images/external-link-icon.svg"
+                                            alt="Visitar site"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/project1.png" alt="">
+                            </figure>
+                            <h3>Sunnyside Website</h3>
+                            <footer>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- Easybank -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/Ahlam-Mohammed/Easybank" target="_blank"
+                                        rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                                    <a href="https://ahlam-mohammed.github.io/Easybank/" target="_blank"
+                                        rel="noreferrer"><img src="images/external-link-icon.svg"
+                                            alt="Visitar site"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/project2.png" alt="">
+                            </figure>
+                            <h3>Easybank</h3>
+                            <footer>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- Dream -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article>
+                            <header>
+                                <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                    fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>Folder</title>
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                <div class="project-links">
+                                    <a href="https://github.com/Ahlam-Mohammed/Dreams-website" target="_blank"
+                                        rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                                    <a href="https://ahlam-mohammed.github.io/Dreams-website/" target="_blank"
+                                        rel="noreferrer"><img src="images/external-link-icon.svg"
+                                            alt="Visitar site"></a>
+                                </div>
+                            </header>
+                            <figure>
+                                <img src="images/project3.png" alt="">
+                            </figure>
+                            <h3>Dreams Website</h3>
+                            <footer>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <!-- <article class="col-lg-4">
+                        <header>
+                            <svg width="40" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                fill="none" stroke="#254242 " stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <title>Folder</title>
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                </path>
+                            </svg>
+                            <div class="project-links">
+                                <a href="https://github.com/Ahlam-Mohammed/Login-Tailwindcss" target="_blank"
+                                    rel="noreferrer"><img src="images/github-icon.svg" alt="GitHub"></a>
+                                <a href="https://ahlam-mohammed.github.io/Login-Tailwindcss/" target="_blank"
+                                    rel="noreferrer"><img src="images/external-link-icon.svg" alt="Visitar site"></a>
+                            </div>
+                        </header>
+                        <img src="images/project4.png" alt="">
+                        <h3>Login</h3>
+                        <footer>
+                            <ul>
+                                <li>Html</li>
+                                <li>TaliwandCss</li>
+                            </ul>
+                        </footer>
+                    </article> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <!-- <section class="services container-lg" id="services">
+            <header>
+                <h1>Services</h1>
+            </header>
+            <div class="containerr">
+                <article style="background-image: url(images/bg.svg);">
+                    <img src="images/web.svg" alt=""">
+                    <h1>Web development</h1>
+                </article>
+                <article style=" background-image: url(images/bg.svg);">
+                    <img src="images/ux-ui.svg" alt="">
+                    <h1>UI/UX design</h1>
+                </article>
+            </div>
+        </section> -->
+
+        <!-- Contact Me Section -->
+        <section class="contant container-lg" id="contacts">
+            <header>
+                <h1>Contact Me</h1>
+                <p>If you've seen my potential or want to talk to me, don't hesitate to send me a message.</p>
+            </header>
+            <div class="containerr">
+                <div class="contact-me">
+                    <div style="background-image: url(images/btn.svg);">
+                        <img src="images/email-icon.svg" alt="Email">
+                        <a href="ahlam.m.alfashq@gmail.com">ahlam.m.alfashq@gmail.com</a>
+                    </div>
+                    <div style="background-image: url(images/btn.svg);">
+                        <img src="images/phone-icon.svg" alt="Phone">
+                        <a href="tel:+967737341940">(967) 737341940</a>
+                    </div>
+                </div>
+                <div class="form">
+                    <h2>Get in touch using the form below</h2>
+                    <div class="form">
+                        <input placeholder="Email" id="email" type="text" name="email">
+                        <p class="error" id="emailError"></p>
+                        <textarea required="" placeholder="your mensagem" id="message" name="message"></textarea>
+                        <p class="error" id="messageError"></p>
+                        <button id="send" class="btn" onclick="send()"
+                            style="background-image: url(images/btn.svg);">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-lg">
+
+            <div class="containerr">
+                <a href="#"><span>A</span>hlam</a>
+                <div class="technical-skills">
+                    <a href="https://www.facebook.com/profile.php?id=100073558843295" target="_blank"
+                        rel="noreferrer"><img src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="https://twitter.com/ahlam_mo7md" target="_blank" rel="noreferrer"><img
+                            src="images/twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/in/ahlammo7md/" target="_blank" rel="noreferrer"><img
+                            src="images/linkedin.svg" alt="Linkedin"></a>
+                    <a href="https://github.com/Ahlam-Mohammed" target="_blank" rel="noreferrer"><img
+                            src="images/github.png" alt="Github"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scribt File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
